@@ -1,0 +1,141 @@
+.faq {
+	.wrapper {
+		padding: 60px 0;
+		.content1 {
+			.content1-container {
+				.row {
+					.column1 {
+						position: relative;
+						.heading-container {
+							.heading {		
+								font-size: 60px;
+								font-weight: 200;
+								line-height: 1.1em;
+								color: $navy;
+							}
+						}
+						.clipart {
+							position: absolute;
+							right: 5%;
+							top: 35px;
+							z-index: 1;
+							img {
+								height: 175px;
+								width: 100px;
+								z-index: 1;
+							}
+						}
+					}
+				}
+			}
+		}
+		.content2 {
+			.content2-container {
+				.row {
+					.column2 {
+						.questions-answers-container {
+							display: grid;
+							grid-template-columns: 1fr 1fr;	
+							grid-template-areas: "left right";
+							grid-auto-flow: row;
+							gap: 30px;				
+							.left {
+								grid-area: left;
+								grid-row: auto;
+							}					
+							.right {
+								grid-area: right;
+								grid-row: auto;
+								z-index: 99999;
+							}
+							.questions-answers {
+								.subject-container {
+									.subject {
+										font-size: 34px;
+										font-weight: 600;
+										padding: 40px 0;
+										color: $navy;
+									}
+								}
+								.qa {
+									.question-container {
+										display: flex;
+										flex-direction: row;
+										justify-content: space-between;
+										align-items: center;
+										padding: 10px 0 10px 10px;
+										margin: 10px 0 0 0;
+										border: 1px solid $grey;
+										background-color: $white;
+										.question {
+											width: 90%;
+											margin: 5px 0;
+											padding: 0 10px 0 0;
+											font-weight: 100;
+											border-right: 1px solid $blue;
+										}
+										a {
+											width: 10%;
+											text-align: center;
+											color: $blue;
+										}
+									}
+									.answer {
+										padding: 20px 10px;
+										font-weight: 100;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px){
+	.faq {
+		.wrapper {
+			.content1 {
+				.content1-container {
+					.row {
+						.column1 {
+							padding: 0 10px;
+							.heading-container {
+								.heading {		
+									font-size: 40px;
+								}
+							}
+							.clipart {
+								display: none;
+							}
+						}
+					}
+				}
+			}		
+			.content2 {
+				.content2-container {
+					.row {
+						.column2 {
+							padding: 0 10px;
+							.questions-answers-container {
+								grid-template-columns: 1fr;	
+								grid-template-areas: 
+								"left"
+								"right";
+								.questions-answers {
+									.subject-container {
+										.subject {
+											font-size: 28px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}	

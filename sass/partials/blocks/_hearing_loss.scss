@@ -1,0 +1,74 @@
+.hearing-loss {
+	height: 525px;
+	.wrapper {
+		.content-wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			width: 100%;
+			padding: 60px 0 0 0;
+			.content {
+				width: 50%;
+				.heading {
+					font-size: 50px;
+					line-height: 1.1em;
+					color: $white;
+					padding: 0 0 20px 0;
+				}
+				.sub-heading {
+					color: $white;
+					position: relative;
+					padding: 20px 0 0 0;
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0px;
+						left: 0;
+						width: 50%;
+						border-bottom: 1px solid $red;
+					}
+					a {
+						color: $white;
+						text-decoration: underline;
+						&:hover {
+							color: $gold;
+						}
+					}
+				}
+				.button-large {
+					background: rgb(38,69,118);
+					background: linear-gradient(180deg, rgba(38,69,118,1) 0%, rgba(12,42,88,1) 100%, rgba(12,42,88,1) 100%);
+					border: 1px solid $lightblue;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+}
+	
+@media screen and (max-width: 800px){
+	.hearing-loss {
+		.wrapper {
+			.content-wrapper {
+				padding: 0;
+				.content {
+					width: 100%;
+					padding: 30px;
+					.heading {
+						font-size: 36px;
+						line-height: 1.1em;
+					}
+					.sub-heading {
+						&:before {
+							border-bottom: 1px solid $white;
+						}
+					}
+					.button-large {
+						margin: 40px 0 20px 0;
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}	

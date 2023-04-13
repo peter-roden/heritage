@@ -1,0 +1,55 @@
+.login_panel_middle {
+	.content1 {
+		position: relative;
+		width: 100%;
+		.content1-container {
+			.row {
+				margin: 80px 0 0 0;
+				.column {
+					.heading {		
+						font-size: 40px;
+						font-weight: 200;
+						line-height: 1.1em;
+						color: $navy;
+						position: relative;
+						&:after{
+							content: '';
+							position: absolute;
+							top: 80px;
+							left: 0;
+							width: 25%;
+							border-top: 4px solid $gold;
+						}
+						a {
+							color: $navy;
+							font-weight: 400;
+							padding: 0 10px 0 0;
+						}
+					}
+					.sub-heading {
+						padding: 60px 0 30px 0;
+					}
+				}
+			}
+		}	
+	}
+}
+
+@media screen and (max-width: 1025px){
+	.login_panel_middle {
+		.content1 {
+			.content1-container {
+				.row {
+					.column {
+						margin: 0 30px;
+						.heading {		
+							&:after{
+								top: 120px;
+							}
+						}
+					}
+				}
+			}	
+		}
+	}
+}	

@@ -1,0 +1,117 @@
+.amplifon_panel_bottom {
+	.wrapper {		
+		.content {
+			width: 100%;
+			padding: 0;
+			.content-container {
+				.mobile {
+					display: none;
+				}
+				.desktop {
+					.row {
+						position: relative;	
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+						border-bottom: 1px solid $red;
+						border-right: 1px solid $red;
+						border-left: 1px solid $red;
+						.left {
+							display: block;
+							float: left;
+							width: 60%;
+							background-color: $white;
+							padding: 20px;
+							.left-container {
+								position: relative;
+								.image {
+									display: block;
+									img {
+										display: block;
+									}
+								}
+							}
+						}
+						.right {
+							display: block;
+							float: right;
+							width: 38%;
+							margin: 0 0 0 -120px;
+							z-index: 999;
+							.right-container {
+								background-color: $red;
+								padding: 30px;
+								.right-text {
+									font-size: 20px;
+									color: $white;
+									padding: 20px 0 0 0;
+								}
+								button {
+									width: 50%;
+									background-color: $gold;
+									a {
+										color: $white;
+										&:hover {
+											color: $red;
+										}	
+									}	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1025px){
+	.amplifon_panel_bottom {
+		.wrapper {	
+			.content {
+				.content-container {
+					.desktop {
+						display: none;
+					}
+					.mobile {
+						display: block;
+						.mobile-container {
+							.left {
+								position: relative;
+								.left-container {								
+									display: block;
+									margin: -110px 0 0 6%;
+									background-color: $red;
+									padding: 30px;
+									width: 75%;
+									z-index: 999;
+									.left-text {
+										font-size: 20px;
+										color: $white;
+										padding: 20px 0 0 0;
+									}
+									.line {
+										margin: 30px 0;
+										border: 3px solid $white;
+										width: 40%;
+									}
+									button {
+										margin: 30px 0 10px 0;
+										width: 100%;
+										background-color: $gold;
+										a {
+											color: $white;
+											&:hover {
+												color: $red;
+											}	
+										}	
+									}		
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

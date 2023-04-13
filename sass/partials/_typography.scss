@@ -1,0 +1,162 @@
+body {
+	
+	color:$black;
+	font-size: $base-font-size;
+	font-family: $base;
+	-webkit-text-size-adjust: 100%;
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 0 0.8em 0;
+		padding: 0;
+		&:last-child {
+			margin-bottom:0;
+		}
+	}
+
+	h1 {
+		font-size: 60px;
+		line-height: 60px;
+		font-weight: 200;
+		color: $white;
+	}
+
+	h2 {
+		font-size: 26px;
+		line-height: 26px;
+		color: $blue;
+	}
+
+	h3 {
+		font-size: 24px;
+		line-height: 24px;
+		text-transform: none;
+	}
+
+	h4 {
+		font-size:20px;
+		line-height: 20px;
+		font-weight: 600;
+	} 
+
+	h5, h6 {
+		font-size: 1em;
+	}	
+
+	img {
+		max-width:100%;
+		height:auto;
+		vertical-align: middle;
+		padding: 0 0 10px 0;
+	}
+
+	a {
+		cursor:pointer;
+		text-decoration: none;
+		position:relative;
+		display:inline-block;
+		transition:color 100ms ease-in;
+	}
+
+	strong {
+		font-weight:bold;
+	}
+
+	em {
+		font-style:italic;
+	}
+
+	sup {
+		vertical-align: super;
+		font-size:0.6em;
+	}
+
+	ol {
+		list-style-type: decimal;
+		margin-left:2.5em;
+		padding:0.5em 0 2em;
+
+		li {
+			padding-left:0.4em;
+			margin-bottom: 0.5em;
+		}
+	}	
+
+	span {
+		line-height:1em;
+	}
+
+	p {
+		line-height: 1.4em;
+		margin:0 0 1.4em 0;
+
+		&:last-child {
+			margin-bottom:0;
+		}
+	}
+
+	form {
+		input,
+		button,
+		textarea,
+		select {
+			font-size: 1em;
+			outline: 0;
+		}
+	}		
+
+	button {
+		margin: 20px 0;
+		text-align: center;
+		color: $white;
+		font-weight: 400;
+		outline: 0;
+		cursor:pointer;
+		border:none;
+	
+		a {
+			font-family: $base;
+			color: $white;
+			&:hover {
+				color: $gold;
+			}
+			i {
+				padding: 0 7px 0 0;
+			}
+		}
+	
+	}	
+	.button-blue {
+		background-color: $blue;
+		border: 1px solid $lilac;
+	}
+	.button-large {
+		width: 50%;
+		height: 64px;
+		font-size: 22px;
+		border: 5px solid $lightblue;
+	}
+	.button-small {
+		width: 30%;
+		height: 44px;
+		font-size: 18px;
+	}
+	
+	li {
+		padding: 10px 0px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	body {
+		h1 {
+			font-size: 40px;
+			line-height: 40px;
+		}
+		.button-large {
+			width: 70%;
+		}
+		.button-small {
+			width: 60%;
+		}
+	}
+}

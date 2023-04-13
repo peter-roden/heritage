@@ -1,0 +1,112 @@
+.about_us_panel_middle {
+	.content1 {
+		margin: 60px 0 0 10%;
+		.content1-container {
+			.row {
+				margin: 0 0 0 0;
+				display: flex;
+				flex-direction: column;
+				.column1 {
+					.you-deserve {
+						color: $white;
+						background-color: $blue;
+						text-align: center;
+						font-size: 18px;
+						line-height: 26px;
+						width: 125px;
+					}
+					.heading-container {
+						display: flex;
+						flex-direction: column;
+						position: relative;
+						.heading {		
+							font-size: 60px;
+							font-weight: 200;
+							line-height: 1.1em;
+							color: $blue;
+						}
+						.sub-heading {
+							width: 50%;
+							padding: 20px 0 20px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.content2 {
+		margin: 60px 0 0 0;
+		.content2-container {
+			margin: 0 0 60px 0;
+			.row {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				column-gap: 10px;
+				row-gap: 1em;
+				.column {
+					display: block;
+					margin: 0 auto;
+					text-align: center;
+					.heading-container {
+						display: inline-block;
+						width: 80%;
+						height: 260px;
+						padding: 20px;
+						margin: -115px 0 0 0;
+						text-align: left;
+						.heading {		
+							font-size: 22px;
+							font-weight: 600;
+							line-height: 1.1em;
+							color: $white;
+						}
+						.sub-heading {	
+							padding: 20px 0 0 0;	
+							color: $white;
+						}
+					}
+				}
+				.column1 {
+					.heading-container {
+						background-color: rgba(20, 48, 98, 0.7);
+					}
+				}
+				.column2 {
+					.heading-container {
+						background-color: rgba(191, 30, 46, 0.7);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px){
+	.about_us_panel_middle {
+		.content1 {
+			.content1-container {
+				.row {
+					.column1 {
+						.heading-container {
+							.sub-heading {
+								width: 80%;
+							}
+						}
+					}
+				}
+			}
+		}
+		.content2 {
+			.content2-container {
+				.row {
+					grid-template-columns: 1fr;
+					.column {
+						.heading-container {
+							margin: -135px 0 0 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}	

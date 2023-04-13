@@ -1,0 +1,129 @@
+.gform_wrapper {
+	.gform_heading {
+		display: none;
+	}
+	.gfield_label {
+		display: none !important;
+	}
+	.gfield {
+		position: relative;
+	}
+}
+
+//*******************************************
+//
+// CONTACT FORM
+//
+//*******************************************
+
+.gform_wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: 100px;
+	row-gap: 0;
+	#gform_1_validation_container {
+		width: 66.66%;
+	}
+	#gform_1 {
+		width: 66.66%;
+		margin: 20px 0 80px 0;
+		input, select, textarea {
+			font-family: $base;
+			&::placeholder {
+				color: $midgrey;
+			}
+		}
+		#field_1_1 {
+			&:before {
+				position: absolute;
+				transform: translate(0,-50%);
+				top: 50%;
+				left: 10px;
+				font-family: "Font Awesome 5 Pro";
+				content: "\f007";
+				color: $midgrey;
+			}
+			input {
+				padding: 10px 0 10px 35px;
+			}
+		}
+		#field_1_4 {
+			&:before {
+				position: absolute;
+				transform: translate(0,-50%);
+				top: 50%;
+				left: 10px;
+				font-family: "Font Awesome 5 Pro";
+				content: "\f0e0";
+				color: $midgrey;
+			}
+			input {
+				padding: 10px 0 10px 35px;
+			}
+		}
+		#field_1_5 {
+			&:before {
+				position: absolute;
+				transform: translate(0,-50%);
+				top: 50%;
+				left: 10px;
+				font-family: "Font Awesome 5 Pro";
+				content: "\f095";
+				color: $midgrey;
+			}
+			input {
+				padding: 10px 0 10px 35px;
+			}
+		}
+		.gform_footer {
+			position: relative;
+			&:before {
+				position: absolute;
+				transform: translate(0,-50%);
+				top: 38px;;
+				left: 12%;
+				font-family: "Font Awesome 5 Pro";
+				content: "\f1d8";
+				color: $white;
+				z-index: 9999;
+			}
+			#gform_submit_button_1	{
+				width: 40%;
+				background-color: $gold;
+				margin: 0;
+				height: 44px;
+				font-size: 18px;
+				font-family: "source-sans-pro";
+				text-transform: uppercase;
+				color: $white;
+				border: none;
+				position: relative;
+				cursor: pointer;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1200px){
+	.gform_wrapper {
+		margin: 40px 10px 0 10px;
+		#gform_1_validation_container {
+			width: 100%;
+		}
+		#gform_1 {
+			width: 100%;
+		}
+	}
+}	
+@media screen and (max-width: 1000px){
+	.gform_wrapper {
+		#gform_1 {
+			.gform_footer {
+				#gform_submit_button_1 {
+					width: 60%;
+				}
+			}
+		}
+	}
+}

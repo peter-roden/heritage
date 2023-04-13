@@ -1,0 +1,382 @@
+.clients_panel_middle {
+	.wrapper {
+		.desktop {
+			display: block;
+			.content1 {
+				.content1-container {
+					margin: 80px 0 0 0;
+					.row {
+						display: flex;
+						flex-direction: row;
+						position: relative;
+						.column1 {
+							.image {
+								margin: 0 0 0 -80px;
+								padding: 0 50px 0 0;
+							}
+							.text {
+								display: inline-block;
+								width: 70%;
+								margin: -10% 0 0 10%;
+								padding: 20px 20px 40px 20px;
+								background-color: $white;
+								border-left: 1px solid $lilac;
+								b {
+									color: $blue;
+									font-weight: 600;
+								}
+							}
+							.border-bottom {
+								display: inline-block;
+								width: 100%;
+								height: 20px;
+								margin: -4% 0 0 10%;
+								border-bottom: 1px solid $lilac;
+								border-left: 1px solid $lilac;
+							}
+						}
+						.column2 {
+							position: relative;
+							display: flex;
+							flex-direction: column;
+							margin: 0 0 50px 0;
+							.inner-row {
+								border-right: 1px solid $lilac;
+								margin: 0 20px 0 0;
+							}
+							.none {
+								border-right: 0px;
+								border-bottom: 0px;
+							}
+							.bottom {
+								border-right: 1px solid $lilac;
+								border-bottom: 1px solid $lilac;
+							}
+							.you-deserve {
+								color: $white;
+								background-color: $navy;
+								text-align: center;
+								font-size: 18px;
+								line-height: 26px;
+								width: 125px;
+							}
+							.heading-container {
+								display: flex;
+								flex-direction: row;
+								width: 100%;
+								padding: 0 20px 0 0;
+								.heading {
+									width: 55%;
+									height: 80px;
+									padding: 0 10px 0 0;
+									font-size: 60px;
+									font-weight: 200;
+									color: $blue;
+								}
+								.line {
+									display: flex;
+									flex-direction: column;
+									width: 100%;
+									height: 80px;
+									.top {
+										width: 100%;
+										height: 50px;
+									}
+									.bottom {
+										width: 99.75%;
+										height: 30px;
+										border-top: 1px solid $lilac;
+										border-right: 1px solid $lilac;
+										border-bottom: 0px;
+										border-left: 0px;
+									}
+								}
+							}
+							.sub-heading {
+								font-size: 20px;
+								font-weight: 300;
+								position: relative;
+								padding: 0 20px 0 0;
+								&:after {
+									content: '';
+									position: absolute;
+									bottom: -20px;
+									left: 0;
+									width: 50%;
+									border-bottom: 1px solid $red;
+								}
+							}
+							.text {
+								padding: 50px 20px 0 0;
+								font-size: 16px;
+								a {
+									color: $red;
+									&:hover {
+										color: $gold;
+									}
+								}
+							}
+							.toll-free {
+								padding: 30px 0 0 0;
+								font-size: 18px;
+								a {
+									color: $red;
+									&:hover {
+										color: $gold;
+									}
+								}
+							}
+							.links {
+								display: flex;
+								flex-direction: row;
+								align-content: center;
+								padding: 0 20px 1px 0;
+								.link {
+									a {
+										padding: 30px 0px 0 30px;
+										color: gold;
+										&:hover {
+											color: blue;
+										}
+										i {
+											padding: 0 0 0 10px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.mobile {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.clients_panel_middle {
+		.wrapper {
+			.desktop {
+				display: none;
+			}
+			.mobile {
+				display: block;
+				.content {
+					.content-container {
+						.row {
+							margin: 0 10px;
+							.col1 {
+								position: relative;
+								&:before {
+									position: absolute;
+									top: 5%;
+									right: 5%;
+									bottom: 0;
+									left: 5%;
+									content: '';
+									border-top: 1px solid #BF1E2E;
+									border-right: 1px solid #BF1E2E;
+									border-bottom: none;
+									border-left: 1px solid #BF1E2E;
+								}
+								.image {
+									img {
+										width: 100%;
+										height: auto;
+									}
+								}
+							}
+							.col2 {
+								position: relative;
+								&:before {
+									position: absolute;
+									top: 0;
+									right: 5%;
+									bottom: 5%;
+									left: 5%;
+									content: '';
+									border-top: none;
+									border-right: 1px solid #BF1E2E;
+									border-bottom: 1px solid #BF1E2E;;
+									border-left: 1px solid #BF1E2E;
+								}
+								.you-deserve-container {
+									padding: 30px 40px 0 40px;
+									.you-deserve {
+										color: $white;
+										background-color: $blue;
+										text-align: center;
+										font-size: 22px;
+										line-height: 32px;
+										width: 150px;
+									}
+								}
+								.heading {
+									color: $blue;
+									font-size: 64px;
+									font-weight: 200;
+									line-height: 72px;
+									padding: 10px 40px 30px 40px;
+								}
+							}	
+							.col3 {
+								.sub-heading {
+									margin: 20px 40px 0 40px;
+									p {
+										font-size: 24px;
+										font-weight: 200;
+										b {
+											color: $blue;
+										}
+										a {
+	
+											color: $red;
+											&:hover {
+												color: $gold;
+											}
+										}
+									}
+								}
+							}		
+							.col4 {
+								.button-small {
+									margin: 30px;
+									width: 85%;
+								}
+							}		
+							.col5 {
+								.link {
+									margin: 0 40px 30px 40px;
+									a {
+										color: gold;
+										text-transform: uppercase;
+										&:hover {
+											color: blue;
+										}
+										i {
+											padding: 0 0 0 10px;
+										}
+									}
+								}
+							}													
+						}
+						.row1 {
+							.col2 {
+								.you-deserve {
+									background-color: $blue;
+								}
+								.heading {
+									color: $blue;
+								}
+							}		
+							.col4 {
+								.button-small {
+									background-color: $blue;
+								}
+							}
+						}
+						.row2 {
+							.col1 {
+								position: relative;
+								&:after {
+									position: absolute;
+									top: 5%;
+									right: 5%;
+									bottom: 0;
+									left: 5%;
+									content: '';
+									border-top: 1px solid $red;
+									border-right: 1px solid $red;
+									border-bottom: none;
+									border-left: 1px solid $red;
+								}
+							}
+							.col2 {
+								position: relative;
+								&:after {
+									position: absolute;
+									top: 0;
+									right: 5%;
+									bottom: 8%;
+									left: 5%;
+									content: '';
+									border-top: none;
+									border-right: 1px solid $red;
+									border-bottom: 1px solid $red;
+									border-left: 1px solid $red;
+								}
+								.you-deserve {
+									background-color: $navy !important;
+								}
+								.heading {
+									color: $navy;
+								}
+							}	
+							.col3 {
+								.sub-heading {
+									p {
+										strong {
+											color: $navy;
+										}
+									}
+								}
+							}	
+							.col4 {
+								.button-small {
+									background-color: $navy;
+								}
+							}
+						}
+						.row3 {
+							.col1 {
+								position: relative;
+								&:after {
+									position: absolute;
+									top: 5%;
+									right: 5%;
+									bottom: 0;
+									left: 5%;
+									content: '';
+									border-top: 1px solid $red;
+									border-right: 1px solid $red;
+									border-bottom: none;
+									border-left: 1px solid $red;
+								}
+							}
+							.col2 {
+								position: relative;
+								&:after {
+									position: absolute;
+									top: 0;
+									right: 5%;
+									bottom: 8%;
+									left: 5%;
+									content: '';
+									border-top: none;
+									border-right: 1px solid $red;
+									border-bottom: 1px solid $red;
+									border-left: 1px solid $red;
+								}
+								.you-deserve {
+									background-color: $red;
+								}
+								.heading {
+									color: $red;
+								}
+							}		
+							.col4 {
+								.button-small {
+									background-color: $red;
+									margin: 30px 30px 60px 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+	

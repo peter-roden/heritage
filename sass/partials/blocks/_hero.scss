@@ -1,0 +1,385 @@
+.hero {
+	.wrapper {
+		position: relative;	
+		.single {
+			.content {
+				position: absolute;
+				top: 50%;
+			}
+		}
+		.multiple {
+			.content {
+				position: absolute;
+				top: 30%;	
+				.you-deserve {
+					padding: 0 0 10px 0;
+				}
+				h1 {
+					margin: 0 0 30px 0;
+					position: relative;	
+				}
+				.login {
+					color: $navy;
+					position: relative;			
+					&:after{
+						content: '';
+						position: absolute;
+						top: 140px;
+						left: 0;
+						width: 60%;
+						border-top: 1px solid $navy;
+					}
+				}
+				.sub-heading {
+					width: 60%;
+					padding: 30px 0 0 0;
+					margin: 0 0 20px 0;
+					position: relative;				
+					&:before{
+						content: '';
+						position: absolute;
+						top: 0px;
+						left: 0;
+						width: 40%;
+						border-top: 1px solid $white;
+					}
+					p {
+						color: $white;
+						font-size: 20px;
+						font-weight: 400;
+					}
+				}
+				.button-small {
+					a {
+						i {
+							font-weight: 600;
+							color: $yellow;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.hero-tall { 
+	height:880px;
+}
+.hero-small{ 
+	height:700px;
+}
+@media screen and (max-width: 1075px){
+	.hero {
+		.wrapper {
+			padding: 0 30px;
+		}
+	}
+	.wysiwyg {
+		padding: 0 20px;
+	}
+}
+@media screen and (max-width: 800px){
+	.hero {
+		.wrapper {
+			.single {
+				padding: 0 60px 0 0;
+			}
+			.multiple {
+				position: relative;
+				height: 100%;
+				.content {
+					position: absolute;
+					width: 100%;
+					padding: 0 60px 0 0;
+					.you-deserve {
+						width: 100%;
+						display: block;
+						img {
+							width: 70%;
+						}
+					}
+					h1 {
+						padding: 20px 0 0 0;
+						margin: 0 0 20px 0;
+						width: 80%;
+						font-size: 48px;
+						line-height: 1.1em;
+					}
+					.sub-heading {
+						width: 80%;	
+						padding: 30px 0 0 0;
+						position: relative;			
+						&:before{
+							top: 0;
+						}
+						p {
+							font-size: 18px;
+						}
+					}
+					.button-large {
+						text-transform: uppercase;
+						font-size: 32px;
+						padding: 32px 12px;
+						height: auto;
+						width: 85%;
+					}
+				}
+			}
+			
+			.happy-holiday {
+				.content {
+					top: 12% !important;
+					padding: 0;
+					
+					h1 {
+						font-size: 39px;
+					}
+					
+					.button-large {
+						font-size: 28px;
+						padding: 28px 12px;
+					}
+					
+				}
+			}
+			
+		}
+	}
+	.hero-small{ 
+		height:800px;
+	}
+}
+.home {
+	.hero {
+		.wrapper {
+			.content {
+				.you-deserve {
+					color: $lightblue;
+				}
+			}
+		}
+	}
+}	
+@media screen and (max-width: 800px){
+	.home {
+		.hero {
+			.wrapper {
+				.multiple {
+					.content {
+						top: 20%;
+					}
+				}
+			}
+		}
+	}
+}	
+.about-us {
+	.hero {
+		.wrapper {
+			.content {
+				.you-deserve {
+					color: $gold;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 800px){
+	.about-us {
+		.hero {
+			.wrapper {
+				.multiple {
+					.content {
+						top: 20%;
+					}
+				}
+			}
+		}
+	}
+}
+.amplifon {
+	.hero {
+		.wrapper {
+			.content {
+				width: 70%;
+				top: 20%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 800px){
+	.amplifon {
+		.hero {
+			.wrapper {
+				.multiple {
+					.content {
+						top: 32%;
+						width: 90%;
+					}
+				}
+			}
+		}
+	}
+}	
+.lasik {
+	.hero {
+		.wrapper {
+			.content {
+				width: 70%;
+				top: 20%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 800px){
+	.lasik {
+		.hero {
+			.wrapper {
+				.multiple {
+					.content {
+						top: 32%;
+					}
+				}
+			}
+		}
+	}
+}	
+.members {
+	.hero {
+		.wrapper {
+			.content {
+				.you-deserve {
+					color: $bluegrey;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 800px){
+	.members {
+		.hero {
+			.wrapper {
+				.multiple {
+					.content {
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}	
+.agents {
+	.hero {
+		.wrapper {
+			.content {
+				top: 22%;
+				.you-deserve {
+					color: $lilac;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 800px){
+	.agents {
+		.hero {
+			.wrapper {
+				.multiple {
+					.content {
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.providers {
+	.hero {
+		.wrapper {
+			.content {
+				.you-deserve {
+					color: $crimson;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 800px){
+	.providers {
+		.hero {
+			.wrapper {
+				.multiple {
+					.content {
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.provider-updates {
+	.hero {
+		.wrapper {
+			.content {
+				.sub-heading {
+					padding: 0;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 800px){
+	.provider-updates {
+		.hero {
+			.wrapper {
+				.content {
+					.you-deserve {
+						img {
+							width: 50%;
+						}
+					}
+					.sub-heading {
+						width: 60%;
+					}
+				}
+			}
+		}
+	}
+}
+.contact {
+	.hero {
+		.wrapper {
+			.content {
+				.you-deserve {
+					color: $blue;
+				}
+				h1 {
+					position: relative;			
+					&:after{
+						content: '';
+						position: absolute;
+						left: 0;
+						bottom: -30px;
+						width: 40%;
+						border-top: 1px solid $white;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 800px){
+	.contact {
+		.hero {
+			.wrapper {
+				.multiple {
+					.content {
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

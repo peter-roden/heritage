@@ -1,0 +1,330 @@
+.home_panel_top {
+	.desktop {
+		.content1 {
+			position: relative;
+			width: 100%;
+			.content1-container {
+				.row1 {
+					margin: 80px 0 0 0;
+					.heading-container {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						border-top: 1px solid $red;
+						border-right: 1px solid $red;
+						border-left: 1px solid $red;
+						.heading {
+							width: 60%;
+							margin-top: -60px;
+							text-align: center;			
+							font-size: 70px;
+							line-height: 1.1em;
+							padding: 20px;
+							background-color: $white;
+							b {
+								color: $red;
+								font-weight: 600;
+							}
+						}
+						.sub-heading {
+							text-align: center;
+							font-size: 20px;
+							color: $red;
+							padding: 0 0 80px 0;
+						}
+					}
+				}
+			}
+		}	
+		.content2 {
+			.content2-container {
+				.row {
+					display: flex;
+					flex-direction: row;
+					.column1 {
+						width: 33.33%;
+						position: relative;
+					}
+					.column2 {
+						width: 33.33%;
+						position: relative;
+					}
+					.column3 {
+						width: 33.33%;
+						position: relative;
+					}
+					img {
+						padding: 0;
+					}
+					.text-container {
+						position: absolute;
+						bottom: 0;
+						left:10px;
+						right: 10px;
+						height: 34%;
+						background-color: $white;
+						padding: 20px;
+						z-index: 999;
+						b {
+							color: $red;
+						}
+					}
+				}
+			}
+		}
+		.content3 {
+			.content3-container {
+				margin: 0 0 50px 0;
+				.row {
+					display: flex;
+					flex-direction: row;
+					border-right: 1px solid $red;
+					border-left: 1px solid $red;
+					border-bottom: 1px solid $red;
+					padding: 50px 0;
+					position: relative;
+					height: 270px;
+					.column1 {
+						display: inline-block;
+						width: 45%;
+						position: absolute;
+						left: -100px;
+						z-index: 999;
+						padding: 20px;
+						background-color: $white;
+						.you-deserve {
+							color: $white;
+							background-color: $blue;
+							text-align: center;
+							font-size: 18px;
+							line-height: 26px;
+							width: 125px;
+						}
+						.heading {
+							font-size: 60px;
+							font-weight: 200;
+							color: $blue;
+						}
+						.sub-heading {
+							font-size: 20px;
+							font-weight: 300;
+						}
+						.links {
+							display: flex;
+							flex-direction: row;
+							align-content: center;
+							.button-small {
+								width: 50%;
+							}
+							.link {
+								a {
+									padding: 30px 0px 0 30px;
+									color: gold;
+									&:hover {
+										color: blue;
+									}
+									i {
+										padding: 0 0 0 10px;
+									}
+								}
+							}
+						}
+					}
+					.column2 {
+						display: inline-block;
+						width: 55%;
+						position: absolute;
+						right: -170px;
+						z-index: 999;
+						padding: 20px;
+						background-color: $white;
+						.logo-row {
+							display: grid;
+							grid-template-columns: 1fr 1fr 1fr;
+							.logo-column {
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+								align-content: center;
+								img {
+									width: 125px;
+									height: auto;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.mobile {
+		display: none;
+	}
+}
+@media screen and (max-width: 1370px){
+	.home_panel_top {
+		.desktop {
+			.content3 {
+				.content3-container {
+					.row {
+						justify-content: center;
+						.column1 {
+							width: 45%;
+							left: 0;
+						}
+						.column2 {
+							width: 45%;
+							left: 55%;
+							background-color: transparent;
+							.logo-row {
+								.logo-column {
+									img {
+										width: 85px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}	
+@media screen and (max-width: 1250px){
+	.home_panel_top {
+		.desktop {
+			.content2 {
+				.content2-container {
+					.row {
+						.text-container {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}		
+@media screen and (max-width: 1025px){
+	.home_panel_top {
+		.mobile {
+			display: block;
+			.col1 {
+				position: relative;
+				.image {
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+				&:after {
+					position: absolute;
+					top: 5%;
+					right: 5%;
+					bottom: 0;
+					left: 5%;
+					content: '';
+					border-top: 1px solid $red;
+					border-right: 1px solid $red;
+					border-bottom: none;
+					border-left: 1px solid $red;
+				}
+			}
+			.col2 {				
+				padding: 30px 0 0 0;
+				text-align: center;
+				position: relative;			
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0px;
+					left: 0;
+					width: 40%;
+					border-top: 1px solid $white;
+				}
+				&:after {
+					position: absolute;
+					top: 0;
+					right: 5%;
+					bottom: 0;
+					left: 5%;
+					content: '';
+					border-top: none;
+					border-right: 1px solid $red;
+					border-bottom: none;
+					border-left: 1px solid $red;
+				}
+				.heading {
+					font-size: 54px;
+					font-weight: 200;
+					text-transform: uppercase;
+					line-height: 1em;
+					b {
+						font-weight: 600;
+						color: $red;	
+					}
+				}
+			}
+			.col3 {
+				text-align: center;
+				padding: 20px 30px;
+				position: relative;
+				&:after {
+					position: absolute;
+					top: 0;
+					right: 5%;
+					bottom: 0;
+					left: 5%;
+					content: '';
+					border-top: none;
+					border-right: 1px solid $red;
+					border-bottom: none;
+					border-left: 1px solid $red;
+				}
+				.sub-heading {
+					font-size: 20px;
+					color: $red;	
+					position: relative;			
+					&:after {
+						content: '';
+						position: absolute;
+						bottom: -30px;
+						left: 30%;
+						width: 40%;
+						border-top: 1px solid $red;
+					}
+				}
+			}
+			.col4 {
+				padding: 60px 40px;
+				position: relative;
+				&:after {
+					position: absolute;
+					top: 0;
+					right: 5%;
+					bottom: 8%;
+					left: 5%;
+					content: '';
+					border-top: none;
+					border-right: 1px solid $red;
+					border-bottom: 1px solid $red;
+					border-left: 1px solid $red;
+				}
+				.text {
+					p {
+						font-size: 22px;
+						font-weight: 200;
+						strong {
+							font-weight: 600;
+							color: $red;	
+						}
+					}
+				}
+			}
+		}
+		.desktop {
+			display: none;
+		}
+	}
+}	

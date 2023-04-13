@@ -1,0 +1,136 @@
+.providers_panel_top{
+	.wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		column-gap: 30px;
+		row-gap: 1em;	
+		position: relative;				
+		.content1 {
+			margin: 60px 0;
+			.content-container1 {
+				.row {
+					.column1 {
+						.heading {
+							position: relative;
+							font-size: 30px;
+							color: $navy;
+							&:after {
+								content: '';
+								position: absolute;
+								bottom: -15px;
+								left: 0;
+								width: 30%;
+								border-bottom: 5px solid $red;
+							}
+						}
+						.sub-heading {
+							padding: 30px 0 0 0;
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}					
+		.content2 {
+			margin: -80px 0 60px 0;
+			padding: 0 0 60px 0;
+			.content-container2 {
+				background-color: $white;
+				border-top: none;
+				border-right: 1px solid $grey;
+				border-bottom: 1px solid $grey;;
+				border-left: 1px solid $grey;;
+				.row {
+					display: flex;
+					flex-direction: column;
+					.column1 {
+						background-color: $navy;
+						text-align: center;
+						padding: 20px;
+						.heading {
+							padding: 10px 0 0 0;
+							font-size: 30px;
+							font-weight: 700;
+							color: $white;
+						}
+					}
+					.column2 {
+						background-color: $navy;
+						text-align: center;
+						padding: 20px 40px 20px 40px;
+						.button-small {
+							margin: 0 0 30px 0;
+							width: 100%;
+							color: $white;
+							background-color: $red;
+						}
+					}
+					.column3 {
+						padding: 20px 20px 0 20px;
+						text-align: center;
+						.heading {
+							position: relative;
+							font-size: 16px;
+						}
+					}
+					.column4 {
+						padding: 0px 20px 10px 20px;
+						.button-small {
+							width: 100%;
+							border: none;
+							background-color: transparent;
+							text-align: center;
+							a {
+								color: $black;
+								font-size: 16px;
+							}
+							i {
+								color: $gold;
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+	
+@media screen and (max-width: 1200px){
+	.providers_panel_top {
+		.wrapper {
+			grid-template-columns: 1fr 1fr;
+			margin: 0 10px;					
+			.content2 {
+				margin: -80px 20px 60px 0;
+			}
+		}
+	}
+}	
+
+	
+@media screen and (max-width: 800px){
+	.providers_panel_top {
+		.wrapper {
+			grid-template-columns: 1fr;	
+			margin: 0;				
+			.content1 {
+				padding: 30px;
+			}			
+			.content2 {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+				width: 100%;
+				margin: 0 auto;
+				.content-container2 {
+					width: 100%;	
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+}	

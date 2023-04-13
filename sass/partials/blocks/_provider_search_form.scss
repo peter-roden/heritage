@@ -1,0 +1,461 @@
+
+form#provider-search {
+	input {
+		padding: 12px 10px;
+		border-color: $grey4;
+		border-radius: 5px;
+		&::placeholder {
+			color: $greyblue;
+			font-style: italic;
+		}
+	}
+	select:required:invalid {
+		color: $greyblue;
+		font-style: italic;
+	}
+	label.error {
+		display: none !important;
+	}
+	.form-container {
+		display: block;
+		width: 100%;
+		float: left;
+		.plan-container {
+			display: block;
+			position: relative;
+			float: left;
+			margin: 0 0 30px 0;
+			width: 96%;
+		}
+		.plan-container:after {
+			content: '\f0d7';
+			font: normal normal normal 24px/1 FontAwesome;
+			color: $blue;
+			right: 11px;
+			height: 22px;
+			padding: 10px 0px 0px 8px;
+			position: absolute;
+			pointer-events: none;
+		}
+		.plan-container select::-ms-expand {
+			display: none;
+		}
+		.plan-container select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			display: block;
+			width: 100%;
+			float: right;
+			padding: 8px 0 8px 10px;
+			font-size: 16px;
+			line-height: 1.75;
+			background-color: #ffffff;
+			background-image: none;
+			border: 1px solid $grey4;
+			border-radius: 5px;
+			-ms-word-break: normal;
+			word-break: normal;
+		}
+		.submit-container {
+			display: block;
+			width: 20%;
+			float: right;
+			input {
+				background-color: $blue;
+				color: $white;
+				width: 80%;
+				padding: 20px;
+				border: 1px solid $grey4;
+				&:hover {
+					color: $gold;
+					cursor: pointer;
+				}
+			}
+		}
+		.zipcode-container {
+			display: block;
+			width: 55%;
+			float: left;
+			.zipcode-inner-container {
+				.input {
+					display: block;
+					width: 65%;
+					float: left;
+					input {
+						width: 90%;
+						border: 1px solid $grey4;
+					}
+				}
+				.location {
+					display: block;
+					width: 35%;
+					float: left;
+					margin: 5px 0 0 0;
+					i {
+						padding: 0 5px 0 10px;
+					}
+					span {
+						text-decoration: underline;
+					}
+					a {
+						&:hover {
+							color: $gold;
+						}
+					}
+				}
+				.located {
+					display: block;
+					width: 100%;
+					float: left;
+					input {
+						width: 90%;
+						border: 1px solid $grey4;
+					}
+				}
+			}
+		}
+		.radius-container {
+			display: block;
+			position: relative;
+			float: left;
+			width: 21%;
+		}
+		.radius-container:after {
+			content: '\f0d7';
+			font: normal normal normal 24px/1 FontAwesome;
+			color: $blue;
+			right: 11px;
+			height: 22px;
+			padding: 10px 0px 0px 8px;
+			position: absolute;
+			pointer-events: none;
+		}
+		.radius-container select::-ms-expand {
+			display: none;
+		}
+		.radius-container select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			display: block;
+			width: 100%;
+			float: right;
+			padding: 8px 0 8px 10px;
+			font-size: 16px;
+			line-height: 1.75;
+			background-color: #ffffff;
+			background-image: none;
+			border: 1px solid $grey4;
+			border-radius: 5px;
+			-ms-word-break: normal;
+			word-break: normal;
+		}
+	}
+	.advanced-container {
+		display: block;
+		width: 100%;
+		float: left;
+		padding: 10px 0;			
+		.heading {
+			width: 95%;
+			border-top: 1px solid $grey;
+			font-size: 16px;
+			color: $blue;
+			font-weight: 600;
+			padding: 10px 10px 20px 0;
+			margin: 20px 0 0 0;
+		}
+		.advanced {
+			width: 102%;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			column-gap: 10px;
+			.provider-container {
+				input {
+					width: 90%;
+					border: 1px solid $grey4;
+				}
+			}
+			.gender-container {
+				display: block;
+				position: relative;
+				float: left;
+				width: 100%;
+			}
+			.gender-container:after {
+				content: '\f0d7';
+				font: normal normal normal 24px/1 FontAwesome;
+				color: $blue;
+				right: 11px;
+				height: 22px;
+				padding: 10px 0px 0px 8px;
+				position: absolute;
+				pointer-events: none;
+			}
+			.gender-container select::-ms-expand {
+				display: none;
+			}
+			.gender-container select {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				display: block;
+				width: 100%;
+				float: right;
+				padding: 8px 0 8px 10px;
+				font-size: 16px;
+				line-height: 1.75;
+				background-color: $white;
+				background-image: none;
+				border: 1px solid $grey4;
+				border-radius: 5px;
+				-ms-word-break: normal;
+				word-break: normal;
+			}
+			.type-container {
+				display: block;
+				position: relative;
+				float: left;
+				width: 100%;
+			}
+			.type-container:after {
+				content: '\f0d7';
+				font: normal normal normal 24px/1 FontAwesome;
+				color: $blue;
+				right: 11px;
+				height: 22px;
+				padding: 10px 0px 0px 8px;
+				position: absolute;
+				pointer-events: none;
+			}
+			.type-container select::-ms-expand {
+				display: none;
+			}
+			.type-container select {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				display: block;
+				width: 100%;
+				float: right;
+				padding: 8px 0 8px 10px;
+				font-size: 16px;
+				line-height: 1.75;
+				background-color: $white;
+				background-image: none;
+				border: 1px solid $grey4;
+				border-radius: 5px;
+				-ms-word-break: normal;
+				word-break: normal;
+			}
+			.reset-container {
+				display: block;
+				text-align: center;
+				margin: 0 0 0 0;
+				input[type="submit"] {
+					background-color: $blue;
+					color: $white;
+					padding: 15px;
+					font-size: 14px;
+					border: none;
+					&:hover {
+						color: $gold;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px){
+	.provider_search {
+		height: 960px;
+	}	
+	form#provider-search {
+		input {
+			padding: 5px;
+			border: 1px solid $grey4;
+			border-radius: 3px;
+			&::placeholder {
+				color: $grey;
+				font-style: italic;
+			}
+		}
+		select {
+			padding: 5px;
+			border: 1px solid $grey4;
+			border-radius: 3px;
+		}
+		select#plan {
+			span {
+				color: $grey;
+			}
+		}
+		.error-message {
+			color: red;
+			width: 100%;
+		}
+		.form-container {
+			display: grid !important;
+			grid-template-columns: 1fr;
+			column-gap: 0;
+			row-gap: 20px;
+			grid-template-areas:
+				"plan"
+				"zipcode"
+				"radius"
+				"submit";
+			padding: 0 20px;
+			margin: 30px 0;
+			.plan-container {
+				grid-area: plan;
+				width: 85%;
+				padding: 0 10px;
+				margin: 0;
+				select {
+					padding: 10px;
+				}
+				select#plan {
+					span {
+						color: $grey;
+					}
+				}
+				&:after {
+					padding: 10px 10px 0px 8px;
+				}
+			}
+			.submit-container {
+				grid-area: submit;
+				width: 85%;
+				padding: 0 10px;
+				input {
+					background-color: $blue;
+					color: $white;
+					font-size: 20px;
+					font-weight: 500;
+					border: 1px solid $grey4;
+					width: 100%;
+					margin: 0;
+					border: none;
+					border-radius: 3px;
+					padding: 20px 10px;
+					&:hover {
+						color: $gold;
+					}
+				}
+			}
+			.zipcode-container {
+				grid-area: zipcode;
+				width: 85%;
+				padding: 0 10px;
+				.zipcode-inner-container {
+					.input {
+						width: 92.5%;
+						input {
+							width: 100%;
+							padding: 10px;
+						}
+					}
+					.location {
+						width: 100%;
+						padding: 10px;
+					}
+					.located {
+						display: block;
+						width: 92.5%;
+						float: left;
+						input {
+							width: 100%;
+							padding: 10px;
+						}
+					}
+				}
+			}
+			.radius-container {
+				grid-area: radius;
+				width: 85%;
+				padding: 0 10px;
+				margin: 0;
+				select {
+					padding: 10px;
+				}
+				select#plan {
+					span {
+						color: $grey;
+					}
+				}
+				&:after {
+					padding: 10px 10px 0px 8px;
+				}
+			}
+		}
+		.advanced-container {
+			display: block;
+			width: 100%;
+			float: left;
+			padding: 10px;			
+			.heading {
+				width: 90%;
+				border-top: 1px solid $grey;
+				font-size: 16px;
+				color: $white;
+				font-weight: 600;
+				padding: 10px 10px 20px 0;
+				margin: 20px 0 0 0;
+			}
+			.advanced {
+				display: grid;
+				grid-template-columns: 1fr;
+				column-gap: 0;
+				row-gap: 20px;
+				.provider-container {
+					width: 100%;
+					padding: 0 20px;
+					input {
+						float: left;
+						width: 81%;
+						border: 1px solid $grey4;
+						padding: 10px 0 10px 10px;
+					}
+				}
+				.gender-container {
+					width: 100%;
+					padding: 0 20px;
+					select {
+						float: left;
+						width: 83%;
+						border: 1px solid $grey4;
+						height: 45px;
+					}
+				}
+				.type-container {
+					width: 100%;
+					padding: 0 20px;
+					select {
+						float: left;
+						width: 83%;
+						border: 1px solid $grey4;
+						height: 45px;
+					}
+				}
+				.reset-container {
+					display: block;
+					margin: 0 auto;
+					text-align: center;
+					input {
+						background-color: $blue;
+						color: $white;
+						padding: 15px;
+						font-size: 14px;
+						&:hover {
+							color: $gold;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+}	

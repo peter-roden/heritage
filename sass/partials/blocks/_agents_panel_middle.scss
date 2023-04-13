@@ -1,0 +1,227 @@
+.agents_panel_middle {
+	padding: 60px 0;
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 30px;
+		row-gap: 1em;
+		.content1 {
+			.content1-container {
+				.row {
+					display: flex;
+					flex-direction: column;
+					.column1 {
+						.heading {		
+							font-size: 60px;
+							font-weight: 200;
+							line-height: 1.1em;
+							color: $blue;
+							position: relative;
+							b {
+								font-weight: 600;
+							}
+							&:after {
+								content: '';
+								position: absolute;
+								bottom: -15px;
+								left: 0;
+								width: 20%;
+								border-bottom: 7px solid $navy;
+							}
+						}
+						.benefits {
+							display: grid;
+							grid-template-columns: repeat(2, 1fr);
+							column-gap: 30px;
+							row-gap: 1em;
+							margin: 60px 0 0 0;
+							.column {
+								.benefit {
+									display: flex;
+									flex-direction: row;
+									.col1 {
+										width: 10%;
+										i {
+											color: $gold;
+										}
+									}
+									.col2 {
+										width: 90%;
+									}
+								}
+							}
+						}
+						.button-small {
+							margin: 60px 0 0 0;
+							width: 40%;
+						}
+					}
+				}
+			}
+		}
+		.content2 {
+			.content2-container {
+				.row {
+					display: flex;
+					flex-direction: row;
+					.column1 {
+						width: 30%;
+						img {
+							height: 120%;
+							width: 120%;
+						}
+					}
+					.column2 {
+						width: 80%;
+						margin: 0 0 0 -50px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						align-content: center;
+						.heading {
+							font-size: 30px;
+							font-weight: 100;
+							line-height: 1.1em;
+							margin: 0 0 10px 20%;
+							b {
+								font-weight: 600;
+							}
+						}
+						.form-row {
+							display: grid;
+							grid-template-columns: repeat(1fr);
+							column-gap: 20px;
+							background-color: $blue;
+							color: $white;
+							padding: 20px 20px 0 20px;
+							#gform_wrapper_2 {
+								input {
+									font-size: 14px;
+									border: none;
+									padding: 10px 0 11px 8px;
+									border: 1px solid $lightblue;
+									&::placeholder {
+										color: $black;
+									}
+								}
+								#field_2_6 {
+									width: 50%;
+								}
+								.gform_footer {
+									position: relative;
+									.button {
+										position: absolute;
+										left: 50%;
+										top: -60px;
+										width: 50%;
+										height: 44px;
+										font-size: 18px;
+										background-color: $gold;
+										color: $white;
+										&:hover {
+											color: $blue;
+										}
+										span {
+											i {
+												padding: 0 5px 0 0;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.agents_panel_middle {		
+		.wrapper {
+			grid-template-columns: 1fr;
+			.content1 {
+				margin: 0 20px;
+			}
+			.content2 {		
+				margin: 30px 20px 0 20px;
+				.content2-container {
+					.row {
+						.column2 {
+							.form-row {
+								grid-template-columns: 1fr;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}	
+@media screen and (max-width: 800px){
+	.agents_panel_middle {		
+		.wrapper {
+			grid-template-columns: 1fr;
+			.content1 {
+				margin: 0 20px;
+			    .content1-container {
+					.row {
+						.column1 {
+							.benefits {
+								.column {
+									.benefit {
+										.col1 {
+											width: 15%;
+										}
+										.col2 {
+											width: 85%;
+										}
+									} 
+								}
+							}
+							.button-small {
+								width: 50%;
+							}
+						}
+					}
+				}
+			}
+			.content2 {		
+				margin: 30px 20px 0 20px;
+				.content2-container {
+					.row {
+						.column1 {
+							width: 50%;
+							img {
+								width: 150%;
+								height: 100%;
+							}
+						}
+						.column2 {
+							width: 75%;
+							margin: 0 0 0 -50px;
+							.form-row {
+								#gform_wrapper_2 {
+									#field_2_6 {
+										width: 100%;
+									}
+									.gform_footer {
+										position: relative;
+										.button {
+											position: relative;
+											left: 0;
+											top: -20px;
+											width: 100%;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}	
+

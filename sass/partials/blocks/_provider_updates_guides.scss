@@ -1,0 +1,45 @@
+.provider_updates_guides{
+	.wrapper {		
+		
+		.content {	
+			padding: 0 20px;
+			.heading {
+				font-size: 30px;
+				font-weight: 700;
+				text-transform: uppercase;
+				line-height: 32px;
+				color: $navy;
+				padding: 60px 0 10px 0;
+			}
+			
+			.mobile-image {
+				display: none;
+			}
+			
+			.desktop-image {
+				text-align: center;
+			}
+			
+		}
+		
+	}
+}
+@media screen and (max-width: 1025px){
+	.provider_updates_guides{
+		.wrapper {		
+			
+			.content {
+				padding: 0 20px;
+
+				.mobile-image {
+					display: block;
+				}
+				
+				.desktop-image {
+					display: none;
+				}
+			}
+			
+		}
+	}
+}

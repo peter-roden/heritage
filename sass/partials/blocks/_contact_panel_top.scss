@@ -1,0 +1,196 @@
+.contact_panel_top {
+	padding: 60px 0 0 0;
+	.wrapper {	
+		position: relative;	
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		column-gap: 100px;
+		row-gap: 1em;
+		grid-template-areas:
+		 "content1 content2";
+		.content1 {
+			grid-area: content1;
+			.content1-container {
+				.row {
+					.column {
+						.heading-container {
+							display: flex;
+							flex-direction: column;
+							.heading {
+								font-size: 40px;
+								font-weight: 100;
+								line-height: 1.1em;
+								color: $blue;
+								margin: 0 0 20px 0;
+								position: relative;
+								a {
+									font-weight: 600;
+								}
+								&:after {
+									content: '';
+									position: absolute;
+									bottom: -30px;
+									left: 0;
+									width: 30%;
+									border-bottom: 5px solid gold;
+								}
+							}
+							.sub-heading {
+								margin: 30px 0 0 0;
+							}
+						}
+					}
+				}
+			}
+		}	
+		.content2 {
+			grid-area: content2;
+			.content2-container {
+				.row {
+					display: flex;
+					flex-direction: column;
+					margin: -125px 0 0 0;
+					.column1 {
+						background-color: rgba(39, 92, 186, 0.4);
+							.provider-search-container {
+								a {
+									width: 100%;
+									&:hover {
+										cursor: pointer;
+									}
+									.provider-search {
+										display: flex;
+										flex-direction: row;
+										justify-content: space-between;
+										width: 100%;
+										background-color: rgba(39, 92, 186, 0.4);
+										padding: 10px 0;
+										.col1 {
+											width: 10%;
+											margin: 0 0 0 10px;
+											padding: 10px 0 10px 10px;
+											background-color: $white;
+											i {
+												color: $navy;
+												font-size: 14px;
+												&:hover {
+													cursor: pointer;
+													color: $gold;
+												}
+											}
+										}
+										.col2 {
+											width: 85%;
+											color: $grey;
+											background-color: $white;
+											padding: 15px 0 10px 0;
+											font-size: 13px;
+											width: 100%;
+											border-top: none;
+											border-bottom: none;
+											border-left: none;
+											&:hover {
+												cursor: pointer;
+												color: $gold;
+											}
+										}
+										.col3 {
+											width: 5%;
+											margin: 0 10px 0 0;
+											padding: 10px 10px 0 10px;
+											background-color: $white;
+											button {
+												margin: 0;
+												background-color: transparent;
+												color: $gold;
+												border-left: 1px solid $gold;
+												font-size: 14px;
+											}
+										}
+									}
+								}
+							}
+					}
+					.column2 {
+						padding: 20px;
+						background-color: $white;
+						border-top: none;
+						border-right: 1px solid $grey;
+						border-bottom: none;
+						border-left: 1px solid $grey;
+						.heading {
+							font-size: 30px;
+							font-weight: 600;
+							line-height: 1.1em;
+							color: $blue;
+							position: relative;
+							&:after {
+								content: '';
+								position: absolute;
+								bottom: -10px;
+								left: 0;
+								width: 100%;
+								border-bottom: 1px solid $gold;
+							}
+						};
+						.sub-heading {
+							padding: 20px 0 0 0;
+						}
+					}
+					.column3 {
+						padding: 20px;
+						background-color: $white;
+						border-top: none;
+						border-right: 1px solid $grey;
+						border-bottom: 7px solid $blue;
+						border-left: 1px solid $grey;
+						.button-small {
+							width: 100%;
+							background-color: $blue;
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1200px){
+	.contact_panel_top {
+		margin: 0 10px;
+	}
+}	
+@media screen and (max-width: 1000px){
+	.contact_panel_top {
+		.wrapper {
+			grid-template-columns: 1fr;
+			grid-template-areas:
+			"content2"
+			"content1";
+			.content1 {
+				.content1-container {
+					.row {
+						.column {
+							.heading-container {
+								width: 300px;	
+							}
+						}
+					}
+				}
+			}		
+			.content2 {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+				width: 100%;
+				margin: 0 auto;
+				.content-container2 {
+					width: 100%;	
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+}	

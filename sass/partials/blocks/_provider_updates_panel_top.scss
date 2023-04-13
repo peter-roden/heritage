@@ -1,0 +1,134 @@
+.provider_updates_panel_top {
+	.wrapper {		
+		.content {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 60px 0 0 0;
+			.content-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				border-top: 1px solid $red;
+				border-right: 1px solid $red;
+				border-left: 1px solid $red;
+				.row {
+					display: block;
+					float: left;
+					width: 90%;
+					position: relative;	
+					margin: -200px 0 0 0;
+					.left {
+						display: block;
+						float: left;
+						width: 65%;
+						.image {
+							display: block;
+							img {
+								display: block;
+							}
+						}
+					}
+					.right {
+						display: block;
+						float: left;
+						width: 40%;
+						background-color: $white;
+						padding: 20px;
+						margin: 80px 0 0 -120px;
+						.heading {
+							position: relative;
+							text-transform: uppercase;
+							margin: 20px 0 0 0;
+							font-size: 30px;
+							font-weight: 700;
+							color: $navy;
+							&:before {
+								content: '';
+								position: absolute;
+								top: -15px;
+								left: 0;
+								width: 30%;
+								border-top: 5px solid $red;
+							}
+						}
+						.text {
+							padding: 10px 0 30px 0;
+							p {
+								font-size: 18px;
+							}
+						}
+						.button-small {
+							width: 60%;
+							background-color: $red;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1025px){
+	.provider_updates_panel_top {
+		.wrapper {	
+			.content {
+				.content-container {
+					display: block;
+					border: none;
+					.row {
+						width: 100%;
+						margin: 0 0 0 0;
+						.left {
+							width: 100%;
+							margin: 0 0 0 0;
+							.image {
+								width: 95%;
+								margin: 0 auto;
+								text-align: center;
+								img {
+									width: 100%;
+									height: auto;
+								}
+							}
+						}
+						.right {
+							width: 92%;
+							margin: 0 auto;
+							text-align: center;
+							margin: 0 0 0 0;
+							.heading {
+								background-color: transparent;
+								text-align: left;
+								padding: 0;
+								&:before {
+									content: '';
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 0;
+									border: none;
+								}
+								&:after {
+									content: '';
+									position: absolute;
+									bottom: -25px;
+									left: 0;
+									width: 20%;
+									border-top: 5px solid $red;
+								}
+							}
+							.text {
+								padding: 50px 0 30px 0;
+								text-align: left;
+							}
+							.button-small {
+								width: 80%;
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
+}

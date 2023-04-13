@@ -1,0 +1,168 @@
+.lasik_panel_bottom {
+	.wrapper {		
+		.content {
+			width: 100%;
+			padding: 0;
+			.content-container {
+				.mobile {
+					display: none;
+				}
+				.desktop {
+					.row {
+						position: relative;	
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+						.left {
+							display: block;
+							float: left;
+							width: 60%;
+							background-color: $white;
+							padding: 20px;
+							.left-container {
+								position: relative;
+								.image {
+									display: block;
+									img {
+										display: block;
+									}
+								}
+								.image-text {
+									position: absolute;
+									left: 10%;
+									bottom: -5%;
+									width: 70%;
+									background-color: $white;
+									padding: 30px;
+									margin: -50px 0 0 0;
+									.left-heading {
+										text-transform: uppercase;
+										font-size: 30px;
+										color: $navy;
+										text-align: left;
+										font-weight: 700;
+									}
+									.left-text {
+										font-weight: 200;
+										font-size: 20px;
+										color: $black;
+										text-align: left;
+									}		
+								}
+							}
+						}
+						.right {
+							display: block;
+							float: right;
+							width: 32%;
+							.right-container {
+								.right-heading {
+									text-transform: uppercase;
+									font-size: 72px;
+									color: $navy;
+									font-weight: 700;
+									line-height: 72px;
+									b {
+										color: $red;
+										font-weight: 700;
+									}
+								}
+								.right-subheading {
+									text-transform: uppercase;
+									font-size: 26px;
+									color: $red;
+									font-weight: 600;
+									font-style: italic;
+									padding: 20px 0 0 0;
+								}
+								.right-text {
+									ul {
+										padding: 0;
+										margin: 0 0 0 10px;
+										li {
+											list-style: none;
+											font-size: 22px;
+											padding-left: 10px;
+											text-indent: -10px;
+											padding: 5px 0;
+											&:before {
+												content:"· ";
+												font-size:18px;
+												vertical-align:middle;
+												line-height:22px;
+											}
+										}
+									}
+								}		
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1025px){
+	.lasik_panel_bottom {
+		.wrapper {	
+			.content {
+				.content-container {
+					.desktop {
+						display: none;
+					}
+					.mobile {
+						display: block;
+						.mobile-container {
+							position: relative;
+							.right-heading {
+								position: absolute;
+								left: 7%;
+								top: 40%;
+								width: 75%;
+								text-align: center;
+								background-color: $white;
+								padding: 20px;
+								text-transform: uppercase;
+								font-size: 72px;
+								color: $black;
+								font-weight: 600;
+								line-height: 72px;
+								b {
+									color: $red;
+									font-weight: 600;
+								}
+							}
+							.left-container {
+								padding: 160px 10px 30px 10px;
+								margin: 0 auto;
+								text-align: center;
+								.left-heading {
+									text-transform: uppercase;
+									font-size: 30px;
+									color: $black;
+									text-align: left;
+									position: relative;
+									&:before {
+										content:"";
+										position: absolute;
+										top: -30px;
+										left: 35%;
+										width: 30%;
+										border: 5px solid $red;
+									}
+								}
+								.left-text {
+									font-weight: 200;
+									font-size: 20px;
+									color: $black;
+									text-align: left;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

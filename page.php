@@ -1,0 +1,10 @@
+<?php get_header(); ?>
+<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+
+	<div class="wrapper full">
+
+	<?php the_content(); ?>
+
+<?php endwhile; endif; ?>
+
+<?php get_footer(); ?>

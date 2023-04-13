@@ -1,0 +1,138 @@
+.provider_search {
+	height: 593px;
+	width: auto;
+	.wrapper {	
+		height: 593px;	
+		position: relative;
+		.content1 {
+			position: absolute;
+			top: 40%;
+			width: 100%;
+			.content1-container {
+				.row {
+					display: flex;
+					flex-direction: column;
+					.column1 {
+						display: flex;
+						flex-direction: row;
+						align-items: top;
+						margin: 30px 0 0 0;
+						.header-image {
+							img {
+								padding: 0;
+							}
+						}
+						.header-text {
+							padding: 20px 0 0 20px;
+							p {
+								font-weight: 200;
+								font-size: 60px;
+								line-height: 1.1em;
+								b {
+									font-weight: 700;
+								}
+							}
+						}
+						.header-mobile-text {
+							display: none;
+						}
+					}
+					.column2 {
+						background-color: $white;
+						padding: 30px 0px 30px 30px;
+						border-radius: 7px;
+						#errormessages {
+							color: red;
+							width: 100%;
+							padding: 5px 0;
+						}
+					}
+					.column3 {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+	
+@media screen and (max-width: 800px){
+	.provider_search {
+		height: 840px;
+		.wrapper {	
+			height: 840px;
+			.content1 {
+				top: 6%;
+				.content1-container {
+					.row {
+						.column1 {
+							display: grid;
+							grid-template-columns: 3fr 2fr;
+							grid-template-areas: "text image";
+							.header-image {
+								grid-area: image;
+								display: block;
+								float: right;
+								padding: 0;
+								img {
+									padding: 0;
+								}
+							}
+							.header-text {
+								display: none;
+							}
+							.header-mobile-text {
+								grid-area: text;
+								display: block;
+								float: left;
+								padding: 20px 0 0 20px;
+								p {
+									font-weight: 200;
+									font-size: 45px;
+									line-height: 1.1em;
+									color: $white;
+									b {
+										font-weight: 700;
+									}
+								}
+							}
+						}
+						.column2 {
+							background-color: transparent;
+							padding: 0;
+							border-radius: 0;
+							margin: -10px 0 0 0;
+							#errormessages {
+								color: red;
+								width: 70%;
+								padding: 5px 20px;
+							}
+						}
+						.column3 {
+							display: block;
+							.disclaimer-container {
+								padding: 10px 0;
+								text-align: center;
+								.disclaimer {
+									color: $white;
+									font-size: 14px;
+									padding: 30px 50px 0 30px;
+									&:before {
+										content: "";
+										display: block;
+										width: 20%;
+										height: 2px;
+										background: $white;
+										left: 38%;
+										bottom: 60px;
+										position: absolute;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}	
